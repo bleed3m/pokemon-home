@@ -30,7 +30,11 @@ addButtonEl.addEventListener("click", function() {
     
     clearFieldsEl()
     
-    appendToShoppingList(inputValue, linkValue)
+    if (inputValue != "") {
+        appendToShoppingList(inputValue, linkValue)
+    } else if (inputValue == "" && linkValue != "") {
+        appendToShoppingList(linkValue, linkValue)
+    }
 })
 
 clearButtonEl.addEventListener("click", function() {
@@ -43,5 +47,9 @@ function clearFieldsEl() {
 }
 
 function appendToShoppingList(itemValue, linkValue) {
-    shoppingListEl.innerHTML += `<a href='${linkValue}' target='_blank'><li>${itemValue}</li></a>`
+    if (linkValue != "") {
+        shoppingListEl.innerHTML += `<a href='${linkValue}' target='_blank'><li>${itemValue}</li></a>`
+    } else if (linkValue == "") {
+        shoppingListEl.innerHTML += `<li>${itemValue}</li>`
+    }
 }
