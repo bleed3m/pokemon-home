@@ -5,6 +5,7 @@ html, body {
     padding: 0;
     font-family: 'Fira Mono', sans-serif;
     background-color: #EEF0F4;
+    user-select: none;
     
 }
 .container {
@@ -41,7 +42,7 @@ button {
     text-align: center;
     font-family: 'Fira Mono', sans-serif;
     transition-duration: 0.1s;
-    width: 155px;
+    width: 100%;
 }
 
 button:hover {
@@ -58,5 +59,24 @@ button:active {
 
 #shopping-list {
     font-size: 20px;
-    list-style-image: url("./assets/pokeball.png");
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+ul li {
+    background-color: #c387b3;
+    padding: 15px;
+    border-radius: 8px;
+    flex-grow: 1;
+    box-shadow: 0;
+    text-align: center;
+    transition-duration: .1s;
+}
+
+ul li:hover {
+    background-color: #dbb7d1;
+    cursor: default;
 }
