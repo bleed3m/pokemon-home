@@ -12,11 +12,4 @@ document.addEventListener("click", e => {
       if (dropdown === currentDropdown) return
       dropdown.classList.remove("active")
     })
-
-    
-  })
-
-function toggleMenu() {
-    const menu = document.querySelector(".data-dropdown");
-    menu.classList.toggle("active")
-}
+})
