@@ -3,12 +3,11 @@ html, body {
     padding: 0;
     font-family: 'Fira Mono', sans-serif;
     user-select: none;
-
+    background-color: #EEF0F4;
 }
 
 .container {
     display: flex;
-
     flex-direction: column;
     height: 800px;
     max-width: 320px;
@@ -25,7 +24,7 @@ html, body {
     gap: 10px;
 }
 
-button {
+.button {
     color: #FDFDFD;
     background-color: #9888e8;
     border: 0;
@@ -39,10 +38,92 @@ button {
     height: 100px;
 }
 
-button:hover {
+.button:hover {
     background-color: #aca4f4;
 }
 
-button:active {
+.button:active {
     transform: translateY(2px);
+}
+
+.link {
+    background-image: url(./assets/gliscor.gif);
+    background-size: 90%;
+    background-position-y: center;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.dropdown.active > .link + .dropdown-menu {
+    position: absolute;
+    height: 0px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.information-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #EEF0F4;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.7);
+
+}
+
+.pokemon-button {
+    height: 100px;
+    width: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+}
+
+.pokemon-button:hover {
+    opacity: 70%;
+}
+
+.button1 {
+    background-image: url(./assets/bisharp.gif);
+}
+
+.button2 {
+    background-image: url(./assets/gliscor.gif);
+}
+
+.button3 {
+    background-image: url(./assets/haxorus.gif);
+}
+
+.button4 {
+    background-image: url(./assets/scizor.gif);
+}
+
+.button5 {
+    background-image: url(./assets/sceptile.gif);
+}
+
+.button6 {
+    background-image: url(./assets/landorus.gif);
 }

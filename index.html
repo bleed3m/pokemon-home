@@ -11,18 +11,31 @@
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
         <link rel="manifest" href="./assets/favicon/site.webmanifest">
+        <script src="indexscript.js" type="module"></script>
         <link rel="stylesheet" href="indexstyle.css">
     </head>
-<body>
-    <div class="container">
-        <img src="./assets/gliscor.gif" alt="" class="pokemon">
-        <div class="button-container">
-            <a href="shopping.html"><button class="button">Shopping List</button></a>
-            <a href="shopping.html"><button class="button">Shopping List</button></a>
-            <a href="shopping.html"><button class="button">Shopping List</button></a>
-            <a href="shopping.html"><button class="button">Shopping List</button></a>
+    <body>
+        </nav>
+        <div class="container">
+            <div class="dropdown" data-dropdown>
+                <button class="link" data-dropdown-button></button>
+                <div class="dropdown-menu">   
+                    <div class="information-grid">
+                        <button onclick="toggleMenu()" class="pokemon-button button1"></button>
+                        <button href="" class="pokemon-button button2"></button>
+                        <button href="" class="pokemon-button button3"></button>
+                        <button href="" class="pokemon-button button4"></button>
+                        <button href="" class="pokemon-button button5"></button>
+                        <button href="" class="pokemon-button button6"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="button-container">
+                <a href="shopping.html"><button class="button">Shopping List</button></a>
+                <a href="shopping.html"><button class="button">Shopping List</button></a>
+                <a href="shopping.html"><button class="button">Shopping List</button></a>
+                <a href="shopping.html"><button class="button">Shopping List</button></a>
+            </div>
         </div>
-        
-    </div>
-</body>
+    </body>
 </html>
