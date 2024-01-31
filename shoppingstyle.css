@@ -1,13 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
-
 html, body {
     margin: 0;
     padding: 0;
     font-family: 'Fira Mono', sans-serif;
     background-color: #EEF0F4;
-    user-select: none;
-    
+    user-select: none;  
 }
+
+.top-menu {
+    margin: 25px auto;
+    max-width: 320px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -53,6 +56,10 @@ button:active {
     transform: translateY(2px);
 }
 
+.back-button {
+    width: 100px;
+}
+
 .shopping-button {
     margin: 5px 0;
 }
@@ -68,6 +75,7 @@ button:active {
 
 ul li {
     background-color: #c387b3;
+    color: white;
     padding: 15px;
     border-radius: 8px;
     flex-grow: 1;

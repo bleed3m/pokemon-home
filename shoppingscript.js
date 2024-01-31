@@ -45,8 +45,6 @@ onValue(shoppingListInDB, function(snapshot) {
     
         for (let i=0; i < itemsArray.length; i++) {
             let currentItem = itemsArray[i]
-            let currentItemValue = currentItem[1]
-            let currentItemID = currentItem[0]
     
             appendToShoppingList(currentItem)
         }

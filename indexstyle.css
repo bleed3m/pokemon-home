@@ -1,0 +1,48 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Mono', sans-serif;
+    user-select: none;
+
+}
+
+.container {
+    display: flex;
+
+    flex-direction: column;
+    height: 800px;
+    max-width: 320px;
+    margin: 100px auto;
+}
+
+.button-container {
+    margin-top: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+button {
+    color: #FDFDFD;
+    background-color: #9888e8;
+    border: 0;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Fira Mono', sans-serif;
+    transition-duration: 0.1s;
+    width: 300px;
+    height: 100px;
+}
+
+button:hover {
+    background-color: #aca4f4;
+}
+
+button:active {
+    transform: translateY(2px);
+}
